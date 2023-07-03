@@ -12,6 +12,12 @@ class ProdukSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        produks::create([
+            'nama' => 'Toast',
+            'stok' => 10,
+            'harga_beli' => 10000,
+            'harga_jual' => 12000,
+            'jenis_produk_id' => 1
+        ]);
     }
 }

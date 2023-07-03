@@ -12,6 +12,12 @@ class SupplierSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        suppliers::create([
+            'nama' => 'Rendy',
+            'kota' => 'Jakarta',
+            'email' => 'Rendy@gmail.com',
+            'telephone' => +62842143211,
+            'cp' => +2134
+        ]);
     }
 }

@@ -12,7 +12,7 @@ class jenis_produkSeeder extends Seeder
      */
     public function run(): void
     {
-        jenis_produk::create([
+        jenis_produks::create([
             'nama' => 'Menu Utama'
         ]);
     }

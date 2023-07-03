@@ -12,6 +12,12 @@ class PembelianSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        pembelians::create([
+            'tanggal' => 2003-06-30,
+            'jumlah' => 10,
+            'harga_beli' => 12000,
+            'produk_id' => 1,
+            'supplier_id' => 1
+        ]);
     }
 }

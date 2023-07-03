@@ -12,6 +12,11 @@ class PesananSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        pesanans::create([
+            'tanggal' => 2023-07-03,
+            'jumlah' => 5,
+            'nama_pembeli' => Qin,
+            'produk_id' => 1
+        ]);
     }
 }
