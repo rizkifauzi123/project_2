@@ -22,6 +22,8 @@ return new class extends Migration
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
             // $table->bigInteger('jenis_produks_id');
+            $table->string('foto',30);
+            $table->string('detail',200);
             $table->timestamps();
         });
 
