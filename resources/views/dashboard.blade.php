@@ -6,26 +6,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Dingo</title>
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="{{ asset('lp/img/favicon.png') }}">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ asset('admin/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('lp/css/bootstrap.min.css') }}">
     <!-- animate CSS -->
-    <link rel="stylesheet" href="{{ asset('admin/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('lp/css/animate.css') }}">
     <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="{{ asset('admin/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('lp/css/owl.carousel.min.css') }}">
     <!-- themify CSS -->
-    <link rel="stylesheet" href="{{ asset('admin/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('lp/css/themify-icons.css') }}">
     <!-- flaticon CSS -->
-    <link rel="stylesheet" href="{{ asset('admin/css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('lp/css/flaticon.css') }}">
     <!-- font awesome CSS -->
-    <link rel="stylesheet" href="{{ asset('admin/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('lp/css/magnific-popup.css') }}">
     <!-- swiper CSS -->
-    <link rel="stylesheet" href="{{ asset('admin/css/slick.css') }}">
-    <link rel="stylesheet" href="{{ asset('admin/css/gijgo.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('admin/css/nice-select.css') }}">
-    <link rel="stylesheet" href="{{ asset('admin/css/all.css') }}">
+    <link rel="stylesheet" href="{{ asset('lp/css/slick.css') }}">
+    <link rel="stylesheet" href="{{ asset('lp/css/gijgo.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('lp/css/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ asset('lp/css/all.css') }}">
     <!-- style CSS -->
-    <link rel="stylesheet" href="{{ asset('admin/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('lp/css/style.css') }}">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="{{ asset('admin/index.html') }}"> <img src="img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="index.html"> <img src="{{ asset('lp/img/logo.png') }}" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -44,36 +44,36 @@
 
                         <div class="collapse navbar-collapse main-menu-item justify-content-end"
                             id="navbarSupportedContent">
-                            <ul class="navbar-nav">
+                            {{-- <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ asset('admin/index.html') }}">Home</a>
+                                    <a class="nav-link" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ asset('admin/about.html') }}">About</a>
+                                    <a class="nav-link" href="about.html">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ asset('admin/food_menu.html') }}">Menu</a>
+                                    <a class="nav-link" href="food_menu.html">Menu</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ asset('admin/chefs.html') }}">Chefs</a>
+                                    <a class="nav-link" href="chefs.html">Chefs</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="{{ asset('admin/blog.html') }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Blog
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="{{ asset('admin/blog.html') }}">Blog</a>
-                                        <a class="dropdown-item" href="{{ asset('admin/single-blog.html') }}">Single blog</a>
-                                        <a class="dropdown-item" href="{{ asset('admin/elements.html') }}">Elements</a>
+                                        <a class="dropdown-item" href="blog.html">Blog</a>
+                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
+                                        <a class="dropdown-item" href="elements.html">Elements</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ asset('admin/contact.html') }}">Contact</a>
+                                    <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
-                            </ul>
+                            </ul> --}}
                         </div>
                         <div class="menu_btn">
-                            <a href="#" class="btn_1 d-none d-sm-block">book a tabel</a>
+                            <a href="#" class="btn_1 d-none d-sm-block">Dashboard</a>
                         </div>
                     </nav>
                 </div>
@@ -89,18 +89,20 @@
                 <div class="col-lg-6">
                     <div class="banner_text">
                         <div class="banner_text_iner">
-                            <h5>Expensive but the best</h5>
-                            <h1>Deliciousness jumping into the mouth</h1>
-                            <p>Together creeping heaven upon third dominion be upon won't darkness rule land
-                                behold it created good saw after she'd Our set living. Signs midst dominion
-                                creepeth morning</p>
-                            <div class="banner_btn">
+                            <h5>Warung Kekinian</h5>
+                            <h1>Warung Dingo</h1>
+                            <p>berdiri pada tanggal 8 januari 1989 yang didirikan oleh uji,fatih,yogi dan ahmadin.
+                                Warung dingo memulai karirnya dengan hanya 1 menu UMKM saja namun sekarang ia memiliki beberapa menu yang special dengan bertemakan MENU UMKM 
+                                agar terjangkau pada semua kalangan masyarakat.
+                                Warung Dingo juga tidak asal memilih soal bumbu dan rempah rempah ia mempunyai langganan khusus untuk membeli bumbu.
+                            </p>
+                            {{-- <div class="banner_btn">
                                 <div class="banner_btn_iner">
-                                    <a href="#" class="btn_2">Reservation <img src="{{ asset('admin/img/icon/left_1.svg') }}" alt=""></a>
+                                    <a href="#" class="btn_2">Reservation <img src="{{ asset('lp/img/icon/left_1.svg') }}" alt=""></a>
                                 </div>
                                 <a href="https://www.youtube.com/watch?v=pBFQdxA-apI" class="popup-youtube video_popup">
-                                    <span><img src="{{ asset('admin/img/icon/play.svg') }}" alt=""></span> Watch our story</a>
-                            </div>
+                                    <span><img src="{{ asset('lp/img/icon/play.svg') }}" alt=""></span> Watch our story</a>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -115,8 +117,7 @@
             <div class="row">
                 <div class="col-xl-5">
                     <div class="section_tittle">
-                        <p>Popular Dishes</p>
-                        <h2>Our Exclusive Items</h2>
+                        <h2>Menu Favorit</h2>
                     </div>
                 </div>
             </div>
@@ -124,48 +125,46 @@
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="{{ asset('admin/img/food_item/food_item_1.png') }}" alt="">
+                            <img src="{{ asset('lp/img/menu_resto/aceh.png') }}" alt="">
                         </div>
                         <div class="single_blog_text">
-                            <h3>Indian Burger</h3>
-                            <p>Was brean shed moveth day yielding tree yielding day were female and </p>
-                            <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
+                            <h3>Mie Aceh</h3>
+                            <p>Mi aceh adalah masakan mi pedas khas Aceh di Indonesia. Mi kuning tebal dengan irisan daging sapi, daging kambing atau makanan laut disajikan dalam sup sejenis kari yang gurih dan pedas. Mi aceh biasanya ditaburi dengan bawang goreng dan disajikan bersama emping, potongan bawang merah, mentimun, dan jeruk nipis. </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="{{ asset('admin/img/food_item/food_item_2.png') }}" alt="">
+                            <img src="{{ asset('lp/img/menu_resto/bakar.png') }}" alt="">
                         </div>
                         <div class="single_blog_text">
-                            <h3>Cremy Noodles</h3>
-                            <p>Was brean shed moveth day yielding tree yielding day were female and </p>
-                            <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
+                            <h3>Nasi Bakar</h3>
+                            <p>Nasi bakar merujuk pada nasi yang dibakar oleh arang sampai daun pisang berubah menjadi agak kehitaman dengan menggunakan beberapa bumbu dan lauk, kemudian dibungkus dengan Daun pisang, lalu dibakar di atas api menyala. Daun pisang yang dibakar pun menghasilkan aroma unik pada nasi. Nasi bakar termasuk Masakan Indonesia yang baru berkembang pada awal dekade 1000-an, dan kemungkinan merupakan turunan dari nasi timbel yang merupakan nenek moyang nasi
+
+                                Ada beberapa jenis lauk yang biasanya dihidangkan di nasi bakar, seperti ayam goreng, empal tonjok, ikan peda, bandeng, ikan asin, kerang, jamur, tempe, tahu, telur asin, dan beberapa sayur dsb </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="{{ asset('admin/img/food_item/food_item_3.png') }}" alt="">
+                            <img src="{{ asset('lp/img/menu_resto/toast.png') }}" alt="">
                         </div>
                         <div class="single_blog_text">
-                            <h3>Honey Meat</h3>
-                            <p>Was brean shed moveth day yielding tree yielding day were female and </p>
-                            <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
+                            <h3>Roti panggang</h3>
+                            <p>Kata roti panggang dalam bahasa Inggris yaitu toast memiliki definisi "potongan roti yang dikeringkan dengan panas", diambil dari kata torrere yang artinya "to burn" atau membakar.[2] Referensi pertama untuk roti panggang dalam cetakan adalah dalam resep untuk Oyle Soppys (penyedap bawang yang direbus dalam satu galon bir basi dan satu liter minyak) yang berasal dari 1430. </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 d-none d-sm-block d-lg-none">
+                <div class="col-sm-6 col-lg-4">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="{{ asset('admin/img/food_item/food_item_1.png') }}" alt="">
+                            <img src="{{ asset('lp/img/menu_resto/salyur.png') }}" alt="">
                         </div>
                         <div class="single_blog_text">
-                            <h3>Cremy Noodles</h3>
-                            <p>Was brean shed moveth day yielding tree yielding day were female and </p>
-                            <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
+                            <h3>Salad</h3>
+                            <p>Salad adalah hidangan yang terdiri dari berbagai macam bahan makanan yang dicampur bersama dan biasanya disajikan dalam keadaan dingin. Salad dapat terdiri dari berbagai kombinasi sayuran segar, seperti daun hijau, mentimun, tomat, wortel, paprika, dan sebagainya. Namun, ada juga salad yang menggunakan bahan-bahan lain, seperti buah-buahan, biji-bijian, daging, ikan, keju, dan kacang-kacangan. </p>
                         </div>
                     </div>
                 </div>
@@ -180,19 +179,13 @@
             <div class="row align-items-center">
                 <div class="col-sm-4 col-lg-5 offset-lg-1">
                     <div class="about_img">
-                        <img src="img/about.png" alt="">
+                        <img src="{{ asset('lp/img/menu_resto/resto2.png') }}" alt="">
                     </div>
                 </div>
                 <div class="col-sm-8 col-lg-4">
                     <div class="about_text">
-                        <h5>Our History</h5>
-                        <h2>Where The Food’s As Good
-                            As The Root Beer.</h2>
-                        <h4>Satisfying people hunger for simple pleasures</h4>
-                        <p>May over was. Be signs two. Spirit. Brought said dry own firmament lesser best sixth deep
-                            abundantly bearing, him, gathering you
-                            blessed bearing he our position best ticket in month hole deep </p>
-                        <a href="#" class="btn_3">Read More <img src="{{asset('admin/img/icon/left_2.svg') }}" alt=""></a>
+                        <p>Warung Dingo juga memiliki tempat yang nyaman untuk bersantai dengan keluarga atau meluangkan waktu sendiri.
+                            dengan nuansa terbuka dan instagramable cocok untuk anak yang suka poto poto. </p>
                     </div>
                 </div>
             </div>
@@ -200,49 +193,26 @@
     </section>
     <!-- about part end-->
 
-    <!-- intro_video_bg start-->
-    <section class="intro_video_bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro_video_iner text-center">
-                        <h2>Expect The Best</h2>
-                        <div class="intro_video_icon">
-                            <a id="play-video_1" class="video-play-button popup-youtube"
-                                href="{{ asset('admin/https://www.youtube.com/watch?v=pBFQdxA-apI') }}">
-                                <span class="ti-control-play"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- intro_video_bg part start-->
-
     <!-- food_menu start-->
     <section class="food_menu gray_bg">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-5">
                     <div class="section_tittle">
-                        <p>Popular Menu</p>
-                        <h2>Delicious Food Menu</h2>
+                        <p>Menu Favorit</p>
+                        <h2>Banyak di Pesan</h2>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="nav nav-tabs food_menu_nav" id="myTab" role="tablist">
                         <a class="active" id="Special-tab" data-toggle="tab" href="#Special" role="tab"
-                            aria-controls="Special" aria-selected="false">Special <img src="img/icon/play.svg"
-                                alt="play"></a>
+                            aria-controls="Special" aria-selected="false">Mie</a>
                         <a id="Breakfast-tab" data-toggle="tab" href="#Breakfast" role="tab" aria-controls="Breakfast"
-                            aria-selected="false">Breakfast <img src="img/icon/play.svg" alt="play"></a>
+                            aria-selected="false">Nasi</a>
                         <a id="Launch-tab" data-toggle="tab" href="#Launch" role="tab" aria-controls="Launch"
-                            aria-selected="false">Launch <img src="img/icon/play.svg" alt="play"></a>
+                            aria-selected="false">Roti</a>
                         <a id="Dinner-tab" data-toggle="tab" href="#Dinner" role="tab" aria-controls="Dinner"
-                            aria-selected="false">Dinner <img src="img/icon/play.svg" alt="play"> </a>
-                        <a id="Sneaks-tab" data-toggle="tab" href="#Sneaks" role="tab" aria-controls="Sneaks"
-                            aria-selected="false">Sneaks <img src="img/icon/play.svg" alt="play"></a>
+                            aria-selected="false">Vegan</a>
                     </div>
                 </div>
                 <div class="col-lg-12">
@@ -252,53 +222,45 @@
                             <div class="row">
                                 <div class="col-sm-6 col-lg-6">
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_1.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/mie1.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Pork Sandwich</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Mie Aceh</h3>
+                                            <h5>Rp 25.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_2.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/mie2.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Roasted Marrow</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Mie Godog</h3>
+                                            <h5>Rp 20.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_3.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/mie3.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Summer Cooking</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Mie Jawa</h3>
+                                            <h5>Rp 15.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-6">
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_4.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/mie4.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Easter Delight</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
-                                        </div>
-                                    </div>
-                                    <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_5.png" class="mr-3" alt="...">
-                                        <div class="media-body align-self-center">
-                                            <h3>Tiener Schnitze</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
-                                        </div>
-                                    </div>
-                                    <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_6.png" class="mr-3" alt="...">
-                                        <div class="media-body align-self-center">
-                                            <h3>Chicken Roast</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Mie kocok Bandung</h3>
+                                            <h5>Rp 25.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -309,53 +271,45 @@
                             <div class="row">
                                 <div class="col-sm-6 col-lg-6">
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_4.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/gimbab.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Easter Delight</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Gimbab</h3>
+                                            <h5>Rp 15.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_5.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/bento.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Tiener Schnitze</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Bento</h3>
+                                            <h5>Rp 30.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_6.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/bakar.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Chicken Roast</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Nasi Bakar</h3>
+                                            <h5>Rp 15.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-6">
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_1.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/bacang.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Pork Sandwich</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
-                                        </div>
-                                    </div>
-                                    <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_2.png" class="mr-3" alt="...">
-                                        <div class="media-body align-self-center">
-                                            <h3>Roasted Marrow</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
-                                        </div>
-                                    </div>
-                                    <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_3.png" class="mr-3" alt="...">
-                                        <div class="media-body align-self-center">
-                                            <h3>Summer Cooking</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Bacang</h3>
+                                            <h5>Rp 15.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -366,53 +320,45 @@
                             <div class="row">
                                 <div class="col-sm-6 col-lg-6">
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_1.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/toast.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Pork Sandwich</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Roti Panggang/Toast</h3>
+                                            <h5>Rp 25.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_2.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/canay.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Roasted Marrow</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Roti canay</h3>
+                                            <h5>Rp 15.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_3.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/maryam.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Summer Cooking</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Roti Maryam</h3>
+                                            <h5>Rp 15.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-6">
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_4.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/crossaint.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Easter Delight</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
-                                        </div>
-                                    </div>
-                                    <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_5.png" class="mr-3" alt="...">
-                                        <div class="media-body align-self-center">
-                                            <h3>Tiener Schnitze</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
-                                        </div>
-                                    </div>
-                                    <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_6.png" class="mr-3" alt="...">
-                                        <div class="media-body align-self-center">
-                                            <h3>Chicken Roast</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Crossaint</h3>
+                                            <h5>Rp 20.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -424,111 +370,45 @@
                             <div class="row">
                                 <div class="col-sm-6 col-lg-6">
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_4.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/buah.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Easter Delight</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Salad Buah</h3>
+                                            <h5>Rp 15.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_5.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/sayur.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Tiener Schnitze</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Salad Sayur</h3>
+                                            <h5>Rp 15.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_6.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/gado.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Chicken Roast</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-6">
-                                    <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_1.png" class="mr-3" alt="...">
-                                        <div class="media-body align-self-center">
-                                            <h3>Pork Sandwich</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
-                                        </div>
-                                    </div>
-                                    <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_2.png" class="mr-3" alt="...">
-                                        <div class="media-body align-self-center">
-                                            <h3>Roasted Marrow</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
-                                        </div>
-                                    </div>
-                                    <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_3.png" class="mr-3" alt="...">
-                                        <div class="media-body align-self-center">
-                                            <h3>Summer Cooking</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="tab-pane fade single-member" id="Sneaks" role="tabpanel"
-                            aria-labelledby="Sneaks-tab">
-                            <div class="row">
-                                <div class="col-sm-6 col-lg-6">
-                                    <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_1.png" class="mr-3" alt="...">
-                                        <div class="media-body align-self-center">
-                                            <h3>Pork Sandwich</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
-                                        </div>
-                                    </div>
-                                    <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_2.png" class="mr-3" alt="...">
-                                        <div class="media-body align-self-center">
-                                            <h3>Roasted Marrow</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
-                                        </div>
-                                    </div>
-                                    <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_3.png" class="mr-3" alt="...">
-                                        <div class="media-body align-self-center">
-                                            <h3>Summer Cooking</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Gado-Gado</h3>
+                                            <h5>Rp 15.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-lg-6">
                                     <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_4.png" class="mr-3" alt="...">
+                                        <img src="{{ asset('lp/img/dingo_menu/pecel.png') }}" class="mr-3" alt="...">
                                         <div class="media-body align-self-center">
-                                            <h3>Easter Delight</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
-                                        </div>
-                                    </div>
-                                    <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_5.png" class="mr-3" alt="...">
-                                        <div class="media-body align-self-center">
-                                            <h3>Tiener Schnitze</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
-                                        </div>
-                                    </div>
-                                    <div class="single_food_item media">
-                                        <img src="img/food_menu/single_food_6.png" class="mr-3" alt="...">
-                                        <div class="media-body align-self-center">
-                                            <h3>Chicken Roast</h3>
-                                            <p>They're wherein heaven seed hath nothing</p>
-                                            <h5>$40.00</h5>
+                                            <h3>Pecel</h3>
+                                            <h5>Rp 15.000</h5>
+                                            <div class="menu_btn">
+                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -547,8 +427,8 @@
             <div class="row">
                 <div class="col-xl-5">
                     <div class="section_tittle">
-                        <p>Team Member</p>
-                        <h2>Our Experience Chefs</h2>
+                        <p>Team</p>
+                        <h2>Warung Dingo Chefs</h2>
                     </div>
                 </div>
             </div>
@@ -556,16 +436,15 @@
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="img/team/chefs_1.png" alt="">
+                            <img src="{{ asset('lp/img/chefs/juna.png') }}" alt="">
                         </div>
                         <div class="single_blog_text text-center">
-                            <h3>Adam Billiard</h3>
-                            <p>Chef Master</p>
+                            <h3>Junior John Rorimpandey</h3>
+                            <p>Chef Master 1</p>
                             <div class="social_icon">
                                 <a href="#"> <i class="ti-facebook"></i> </a>
                                 <a href="#"> <i class="ti-twitter-alt"></i> </a>
                                 <a href="#"> <i class="ti-instagram"></i> </a>
-                                <a href="#"> <i class="ti-skype"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -573,16 +452,15 @@
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="img/team/chefs_2.png" alt="">
+                            <img src="{{ asset('lp/img/chefs/arnold.png') }}" alt="">
                         </div>
                         <div class="single_blog_text text-center">
-                            <h3>Fred Macyard</h3>
-                            <p>Chef Master</p>
+                            <h3>Arnold Poernomo</h3>
+                            <p>Chef Master 2</p>
                             <div class="social_icon">
                                 <a href="#"> <i class="ti-facebook"></i> </a>
                                 <a href="#"> <i class="ti-twitter-alt"></i> </a>
                                 <a href="#"> <i class="ti-instagram"></i> </a>
-                                <a href="#"> <i class="ti-skype"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -590,33 +468,15 @@
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="img/team/chefs_3.png" alt="">
+                            <img src="{{ asset('lp/img/chefs/renata.png') }}" alt="">
                         </div>
                         <div class="single_blog_text text-center">
-                            <h3>Justin Stuard</h3>
-                            <p>Chef Master</p>
+                            <h3>Puti Renatta R. Moeloek</h3>
+                            <p>Chef Master 3</p>
                             <div class="social_icon">
                                 <a href="#"> <i class="ti-facebook"></i> </a>
                                 <a href="#"> <i class="ti-twitter-alt"></i> </a>
                                 <a href="#"> <i class="ti-instagram"></i> </a>
-                                <a href="#"> <i class="ti-skype"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-none d-sm-block d-lg-none">
-                    <div class="single_blog_item">
-                        <div class="single_blog_img">
-                            <img src="img/team/chefs_1.png" alt="">
-                        </div>
-                        <div class="single_blog_text text-center">
-                            <h3>Justin Stuard</h3>
-                            <p>Chef Master</p>
-                            <div class="social_icon">
-                                <a href="#"> <i class="ti-facebook"></i> </a>
-                                <a href="#"> <i class="ti-twitter-alt"></i> </a>
-                                <a href="#"> <i class="ti-instagram"></i> </a>
-                                <a href="#"> <i class="ti-skype"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -625,143 +485,14 @@
         </div>
     </section>
     <!--::chefs_part end::-->
-
-    <!--::regervation_part start::-->
-    <section class="regervation_part section_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5">
-                    <div class="section_tittle">
-                        <p>Reservation</p>
-                        <h2>Book A Table</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="regervation_part_iner">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Name *">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="password" class="form-control" id="inputPassword4"
-                                        placeholder="Email address *">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <select class="form-control" id="Select">
-                                        <option value="1" selected>Persons *</option>
-                                        <option value="2">Number of guests 1</option>
-                                        <option value="3">Number of guests 2</option>
-                                        <option value="4">Number of guests 3</option>
-                                        <option value="5">Number of guests 4</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="pnone" placeholder="Phone number *">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <div class="input-group date">
-                                        <input id="datepicker" type="text" class="form-control" placeholder="Date *" />
-                                    </div>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <select class="form-control" id="Select2">
-                                        <option value="" selected>Time *</option>
-                                        <option value="1">8 AM TO 10AM</option>
-                                        <option value="1">10 AM TO 12PM</option>
-                                        <option value="1">12PM TO 2PM</option>
-                                        <option value="1">2PM TO 4PM</option>
-                                        <option value="1">4PM TO 6PM</option>
-                                        <option value="1">6PM TO 8PM</option>
-                                        <option value="1">4PM TO 10PM</option>
-                                        <option value="1">10PM TO 12PM</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <textarea class="form-control" id="Textarea" rows="4"
-                                        placeholder="Your Note *"></textarea>
-                                </div>
-                            </div>
-
-
-                            <div class="regerv_btn">
-                                <a href="#" class="btn_4">Book A Table</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--::regervation_part end::-->
-
-    <!--::review_part start::-->
-    <section class="review_part gray_bg section_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5">
-                    <div class="section_tittle">
-                        <p>Testimonials</p>
-                        <h2>Customers Feedback</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-11">
-                    <div class="client_review_part owl-carousel">
-                        <div class="client_review_single media">
-                            <div class="client_img align-self-center">
-                                <img src="img/client/client_1.png" alt="">
-                            </div>
-                            <div class="client_review_text media-body">
-                                <p>Also made from. Give may saying meat there from heaven it lights face had is gathered
-                                    god dea earth light for life may itself shall whales made they're blessed whales
-                                    also made from give
-                                    may saying meat. There from heaven it lights face had amazing place</p>
-                                <h4>Mosan Cameron, <span>Executive of fedex</span></h4>
-                            </div>
-                        </div>
-                        <div class="client_review_single media">
-                            <div class="client_img align-self-center">
-                                <img src="img/client/client_1.png " alt="">
-                            </div>
-                            <div class="client_review_text media-body">
-                                <p>Also made from. Give may saying meat there from heaven it lights face had is gathered
-                                    god dea earth light for life may itself shall whales made they're blessed whales
-                                    also made from give
-                                    may saying meat. There from heaven it lights face had amazing place</p>
-                                <h4>Mosan Cameron, <span>Executive of fedex</span></h4>
-                            </div>
-                        </div>
-                        <div class="client_review_single media">
-                            <div class="client_img align-self-center">
-                                <img src="img/client/client_1.png" alt="">
-                            </div>
-                            <div class="client_review_text media-body">
-                                <p>Also made from. Give may saying meat there from heaven it lights face had is gathered
-                                    god dea earth light for life may itself shall whales made they're blessed whales
-                                    also made from give
-                                    may saying meat. There from heaven it lights face had amazing place</p>
-                                <h4>Mosan Cameron, <span>Executive of fedex</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--::review_part end::-->
-
     <!--::exclusive_item_part start::-->
     <section class="blog_item_section blog_section section_padding">
         <div class="container">
             <div class="row">
                 <div class="col-xl-5">
                     <div class="section_tittle">
-                        <p>Recent News</p>
-                        <h2>Latest From Blog</h2>
+                        <p>Warung Dingo</p>
+                        <h2>Cabang</h2>
                     </div>
                 </div>
             </div>
@@ -769,60 +500,43 @@
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="img/blog/blog_1.png" alt="">
+                            <img src="{{ asset('lp/img/cabang/cabang1.png') }}" alt="">
                         </div>
                         <div class="single_blog_text">
                             <div class="date">
-                                <a href="#" class="date_item">Apr 06, 2019 </a>
-                                <a href="#" class="date_item"> <span>#</span> Food News </a>
+                                <a href="#" class="date_item"> <span>#</span> Berdiri </a>
+                                <a href="#" class="date_item">Apr 06, 2004  </a>
+                                
                             </div>
-                            <h3><a href="blog.html">Adama kind deep gatherin first over fter his great</a></h3>
-                            <a href="#" class="btn_3">Read More <img src="img/icon/left_1.svg" alt=""></a>
+                            <h3><a href="blog.html">Warung Dingo Jakarta Selatan</a></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="img/blog/blog_2.png" alt="">
+                            <img src="{{ asset('lp/img/cabang/cabang2.png') }}" alt="">
                         </div>
                         <div class="single_blog_text">
                             <div class="date">
-                                <a href="#" class="date_item">Apr 06, 2019 </a>
-                                <a href="#" class="date_item"> <span>#</span> Food News </a>
+                                <a href="#" class="date_item"> <span>#</span> Berdiri </a>
+                                <a href="#" class="date_item">januari 08, 2007  </a>
                             </div>
-                            <h3><a href="blog.html">Adama kind deep gatherin first over fter his great</a></h3>
-                            <a href="#" class="btn_3">Read More <img src="img/icon/left_1.svg" alt=""></a>
+                            <h3><a href="blog.html">Warung Dingo Bogor Barat</a></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="img/blog/blog_3.png" alt="">
+                            <img src="{{ asset('lp/img/cabang/cabang3.png') }}" alt="">
                         </div>
                         <div class="single_blog_text">
                             <div class="date">
-                                <a href="#" class="date_item">Apr 06, 2019 </a>
-                                <a href="#" class="date_item"> <span>#</span> Food News </a>
+                                <a href="#" class="date_item"> <span>#</span> Berdiri </a>
+                                <a href="#" class="date_item">julli 15, 2012 </a>
                             </div>
-                            <h3><a href="blog.html">Adama kind deep gatherin first over fter his great</a></h3>
-                            <a href="#" class="btn_3">Read More <img src="img/icon/left_1.svg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-none d-sm-block d-lg-none">
-                    <div class="single_blog_item">
-                        <div class="single_blog_img">
-                            <img src="img/blog/blog_1.png" alt="">
-                        </div>
-                        <div class="single_blog_text">
-                            <div class="date">
-                                <a href="#" class="date_item">Apr 06, 2019 </a>
-                                <a href="#" class="date_item"> <span>#</span> Food News </a>
-                            </div>
-                            <h3><a href="blog.html">Adama kind deep gatherin first over fter his great</a></h3>
-                            <a href="#" class="btn_3">Read More <img src="img/icon/left_1.svg" alt=""></a>
+                            <h3><a href="blog.html">Warung Dingo Bekasi</a></h3>
                         </div>
                     </div>
                 </div>
@@ -838,50 +552,18 @@
                 <div class="col-xl-3 col-sm-6 col-md-3 col-lg-3">
                     <div class="single-footer-widget footer_1">
                         <h4>About Us</h4>
-                        <p>Heaven fruitful doesn't over for these theheaven fruitful doe over days
-                            appear creeping seasons sad behold beari ath of it fly signs bearing
-                            be one blessed after.</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 col-md-2 col-lg-3">
-                    <div class="single-footer-widget footer_2">
-                        <h4>Important Link</h4>
-                        <div class="contact_info">
-                            <ul>
-                                <li><a href="#">WHMCS-bridge</a></li>
-                                <li><a href="#"> Search Domain</a></li>
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="#">Shopping Cart</a></li>
-                                <li><a href="#"> Our Shop</a></li>
-                            </ul>
-                        </div>
+                        <p>Jika anda memiliki keluhan segera hubungi nomer yang kami siapkan.
+                            Terimakasih atas perhatiannya.
+                        </p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-sm-6 col-md-3 col-lg-3">
                     <div class="single-footer-widget footer_2">
                         <h4>Contact us</h4>
                         <div class="contact_info">
-                            <p><span> Address :</span>Hath of it fly signs bear be one blessed after </p>
-                            <p><span> Phone :</span> +2 36 265 (8060)</p>
-                            <p><span> Email : </span>info@colorlib.com </p>
+                            <p><span> Phone :</span>+62 8647xxxx</p>
+                            <p><span> Email : </span>Warung_dingo12@gmail.com </p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 col-md-4 col-lg-3">
-                    <div class="single-footer-widget footer_3">
-                        <h4>Newsletter</h4>
-                        <p>Heaven fruitful doesn't over lesser in days. Appear creeping seas</p>
-                        <form action="#">
-                            <div class="form-group">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder='Email Address'
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
-                                    <div class="input-group-append">
-                                        <button class="btn" type="button"><i class="fas fa-paper-plane"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -889,15 +571,14 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+By &copy;<script>document.write(new Date().getFullYear());</script> Warung_dingo <i class="ti-heart" aria-hidden="true"></i></a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
                     <div class="col-lg-4">
                         <div class="copyright_social_icon text-right">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="ti-dribbble"></i></a>
-                            <a href="#"><i class="fab fa-behance"></i></a>
+                            <a href="#"> <i class="ti-instagram"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -908,25 +589,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- jquery plugins here-->
     <!-- jquery -->
-    <script src="{{ asset('admin/js/jquery-1.12.1.min.js') }}"></script>
+    <script src="{{ asset('lp/js/jquery-1.12.1.min.js') }}"></script>
     <!-- popper js -->
-    <script src="{{ asset('admin/js/popper.min.js') }}"></script>
+    <script src="{{ asset('lp/js/popper.min.js') }}"></script>
     <!-- bootstrap js -->
-    <script src="{{ asset('admin/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('lp/js/bootstrap.min.js') }}"></script>
     <!-- easing js -->
-    <script src="{{ asset('admin/js/jquery.magnific-popup.js') }}"></script>
+    <script src="{{ asset('lp/js/jquery.magnific-popup.js') }}"></script>
     <!-- swiper js -->
-    <script src="{{ asset('admin/js/swiper.min.js') }}"></script>
+    <script src="{{ asset('lp/js/swiper.min.js') }}"></script>
     <!-- swiper js -->
-    <script src="{{ asset('admin/js/masonry.pkgd.js') }}"></script>
+    <script src="{{ asset('lp/js/masonry.pkgd.js') }}"></script>
     <!-- particles js -->
-    <script src="{{ asset('admin/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('lp/js/owl.carousel.min.js') }}"></script>
     <!-- swiper js -->
-    <script src="{{ asset('admin/js/slick.min.js') }}"></script>
-    <script src="{{ asset('admin/js/gijgo.min.js') }}"></script>
-    <script src="{{ asset('admin/js/jquery.nice-select.min.js') }}"></script>
+    <script src="{{ asset('lp/js/slick.min.js') }}"></script>
+    <script src="{{ asset('lp/js/gijgo.min.js') }}"></script>
+    <script src="{{ asset('lp/js/jquery.nice-select.min.js') }}"></script>
     <!-- custom js -->
-    <script src="{{ asset('admin/js/custom.js') }}"></script>
+    <script src="{{ asset('lp/js/custom.js') }}"></script>
 </body>
 
 </html>
