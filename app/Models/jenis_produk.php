@@ -10,4 +10,5 @@ class jenis_produk extends Model
     use HasFactory;
     protected $tabel = 'jenis_produks';
     protected $fillable = ['nama'];
+    public $timestamps = false;
 }

@@ -73,7 +73,7 @@
                             </ul> --}}
                         </div>
                         <div class="menu_btn">
-                            <a href="#" class="btn_1 d-none d-sm-block">Dashboard</a>
+                            <a href="{{ url('/dashboard')}}" class="btn_1 d-none d-sm-block">Dashboard</a>
                         </div>
                     </nav>
                 </div>
@@ -227,7 +227,7 @@
                                             <h3>Mie Aceh</h3>
                                             <h5>Rp 25.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>
@@ -237,7 +237,7 @@
                                             <h3>Mie Godog</h3>
                                             <h5>Rp 20.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>
@@ -247,7 +247,7 @@
                                             <h3>Mie Jawa</h3>
                                             <h5>Rp 15.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>
@@ -259,7 +259,7 @@
                                             <h3>Mie kocok Bandung</h3>
                                             <h5>Rp 25.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>
@@ -276,7 +276,7 @@
                                             <h3>Gimbab</h3>
                                             <h5>Rp 15.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>
@@ -286,7 +286,7 @@
                                             <h3>Bento</h3>
                                             <h5>Rp 30.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>
@@ -296,7 +296,7 @@
                                             <h3>Nasi Bakar</h3>
                                             <h5>Rp 15.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>
@@ -308,7 +308,7 @@
                                             <h3>Bacang</h3>
                                             <h5>Rp 15.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>
@@ -325,7 +325,7 @@
                                             <h3>Roti Panggang/Toast</h3>
                                             <h5>Rp 25.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>
@@ -335,7 +335,7 @@
                                             <h3>Roti canay</h3>
                                             <h5>Rp 15.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>
@@ -345,7 +345,7 @@
                                             <h3>Roti Maryam</h3>
                                             <h5>Rp 15.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>
@@ -357,7 +357,7 @@
                                             <h3>Crossaint</h3>
                                             <h5>Rp 20.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>
@@ -375,7 +375,7 @@
                                             <h3>Salad Buah</h3>
                                             <h5>Rp 15.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>
@@ -385,7 +385,7 @@
                                             <h3>Salad Sayur</h3>
                                             <h5>Rp 15.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>
@@ -395,7 +395,7 @@
                                             <h3>Gado-Gado</h3>
                                             <h5>Rp 15.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>
@@ -407,7 +407,7 @@
                                             <h3>Pecel</h3>
                                             <h5>Rp 15.000</h5>
                                             <div class="menu_btn">
-                                                <a href="#" class="btn_2 d-none d-sm-block">Beli</a>
+                                                <a href="{{url('/dashboard/pesanan/create')}}" class="btn_2 d-none d-sm-block">Beli</a>
                                             </div>
                                         </div>
                                     </div>

@@ -10,4 +10,5 @@ class pesanan extends Model
     use HasFactory;
     protected $tabel = 'pesanans';
     protected $fillable = ['tanggal','jumlah','nama_pembeli','produk_id'];
+    public $timestamps = false;
 }
